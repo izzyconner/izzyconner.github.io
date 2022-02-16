@@ -2,7 +2,25 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$link-color: blue;
+$link-color: #534545;
+$primary-color: #9c97a0;
+
+
+h3 {
+    color: #634937 !important;
+}
+
+h2 {
+    color: #523521 !important;
+}
+
+h1 {
+    color: #312014 !important;
+}
+
+.page__hero--overlay .page__title {
+    color: rgb(247, 242, 232) !important;
+}
 
 @charset "utf-8";
 
