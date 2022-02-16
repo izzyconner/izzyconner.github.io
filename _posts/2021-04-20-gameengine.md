@@ -2,7 +2,7 @@
 layout: single
 title:  "Games Get Developed Engine"
 date:   2022-01-24 00:57:03 -0500
-categories: code classwork building-game-engines cpp
+tags: code classwork building-game-engines cpp games
 ---
 For the final project in CS4850 Building Game Engines, my team (3) and I improved our tile map editor and built a simple 2D game engine based on the previous games made in the course.
 <hr>
@@ -11,7 +11,7 @@ For the final project in CS4850 Building Game Engines, my team (3) and I improve
 [Github repo][github-repo]
 
 [Original site here][game-engine-site]
-
+<hr>
  While I had worked on the first iteration of the tile map and sprite editors, my main contribution to the final project was designing and coding the engine itself, as well as a small script demo of a 2D platformer.
 
 ## The design choices
