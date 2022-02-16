@@ -28,7 +28,7 @@ url: "https://izzyconner.github.io" # the base hostname & protocol for your site
 github_username:  izzyconner
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes"
+remote_theme: "izzyconner/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
