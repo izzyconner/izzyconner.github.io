@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Izzy Conner
+title: ""
 logo: "assets/images/homeIcon-removebg.png"
 email: conner.i@northeastern.edu
 description: >- # this means to ignore newlines until "baseurl:"
@@ -51,7 +51,7 @@ author:
   name    : "Izzy Conner"
   home    : "/about"
   avatar  : "/assets/images/profile.jpg"
-  bio     : "Current undergrad CS+Game Dev student at Northeastern University."
+  bio     : "Current undergrad CS+Game Dev student at Northeastern University, graduating May 2023."
   location: "Boston, MA"
   links:
     - label: "GitHub"
