@@ -51,11 +51,8 @@ author:
   name    : "Izzy Conner"
   home    : "/"
   avatar  : "/assets/images/profile.jpg"
-  bio     : "Current undergrad CS+Game Dev student at Northeastern University, graduating May 2024.
-  
-  Former Priceline SWE (Backend) Co-op.
-  
-  Currently searching for games-related software, graphics, or game programming internships for summer/fall 2023!"
+  bio     : "CS+Game Dev undergrad student at Northeastern University, graduating May 2024."
+  objective: "Currently searching for summer/fall 2023 games-related software, graphics, or game programming internships!"
   location: "Boston, MA"
   links:
     - label: "GitHub"
