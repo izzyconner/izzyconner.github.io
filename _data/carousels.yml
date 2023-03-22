@@ -1,0 +1,4 @@
+carousels:
+  -images: 
+    -image: ../assets/images/rayTracingCarousel/monkey.png
+    -image: ../assets/images/rayTracingCarousel/cubeRayTracer.png

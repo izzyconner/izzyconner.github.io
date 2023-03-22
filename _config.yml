@@ -49,9 +49,13 @@ search: true
 
 author:
   name    : "Izzy Conner"
-  home    : "/about"
+  home    : "/"
   avatar  : "/assets/images/profile.jpg"
-  bio     : "Current undergrad CS+Game Dev student at Northeastern University, graduating May 2023."
+  bio     : "Current undergrad CS+Game Dev student at Northeastern University, graduating May 2024.
+  
+  Former Priceline SWE (Backend) Co-op.
+  
+  Currently searching for games-related software, graphics, or game programming internships for summer/fall 2023!"
   location: "Boston, MA"
   links:
     - label: "GitHub"
@@ -60,6 +64,12 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/isabella-conner/"
+    - label: "Itch.io"
+      icon: "fas fa-gamepad"
+      url: "https://conneri.itch.io/"
+    - label: "Resume"
+      icon: "fas fa-file"
+      url: "https://drive.google.com/file/d/1eEMCJ69LHBM09k_bm1DeApfaU7fZJKiR/view?usp=sharing"
 
 
 # Exclude from processing.
