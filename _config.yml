@@ -29,8 +29,13 @@ locale: "en-US" # See available languages in _data/sitetext.yml
 analytics:
   google: #Google Analytics tracking code here
 
+collections_dir: portfolio
 collections:
-  portfolio:
+  sections:
+  entries:
+    sort_by: date
+
+  
 
 markdown: kramdown
 
