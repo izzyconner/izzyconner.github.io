@@ -1,8 +1,8 @@
 ---
 caption: #what displays in the portfolio grid:
-  title: Example
+  title: A test
   subtitle: subtitle
-  thumbnail: https://place-hold.it/400x300
+  thumbnail: ./assets/img/portfolio
   date_range: Apr. 2023
   type: Academic Project
   tech_stack: [c++, unity, c#, github]
