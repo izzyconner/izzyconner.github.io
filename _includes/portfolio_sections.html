@@ -1,6 +1,7 @@
 <!-- Portfolio Grid -->
+
 {% for section in site.sections %}
-<section class="bg-light page-section" id="{{ site.data.sitetext.portfolio.section | default: " portfolio" }}">
+<section class="bg-light page-section" id="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -12,7 +13,7 @@
     <div class="row">
       {% assign entries = site.entries | where: 'section', section.title %}
       {% for project in entries %}
-      <div class="col-md-4 col-sm-6 portfolio-item">
+      <div class="col-md-6 col-sm-6 portfolio-item">
         <a class="portfolio-link" data-toggle="modal" href="#p{{ forloop.index }}">
           <div class="portfolio-hover">
             <div class="portfolio-hover-content">
