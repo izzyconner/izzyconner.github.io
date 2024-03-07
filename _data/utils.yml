@@ -1,1 +1,61 @@
-devicons: { "cpp": "devicon-cplusplus-plain", "opengl": "devicon-opengl-plain", "github":"devicon-github-original" }
+devicons: 
+  cpp:
+    name: C++
+    icon: "devicon-cplusplus-plain"
+  opengl:
+    icon: "devicon-opengl-plain"
+    name: "OpenGL"
+  github:
+    icon: "devicon-github-original"
+    name: "Github"
+  illustrator:
+    icon: devicon-illustrator-plain
+    name: Adobe Illustrator
+  csharp:
+    name: "C#"
+    icon: devicon-csharp-plain
+  vs:
+    name: Visual Studio
+    icon: visualstudio-plain
+  vscode:
+    name: VSCode
+    icon: devicon-vscode-plain
+  aws:
+    name: AWS
+    icon: devicon-amazonwebservices-plain-wordmark
+  react:
+    name: React
+    icon: devicon-react-original
+  ts:
+    name: Typescript
+    icon: devicon-typescript-plain
+  node:
+    name: Node.js
+    icon: devicon-nodejs-plain-wordmark
+  nest:
+    name: NestJS
+    icon: devicon-nestjs-original
+  dynamo:
+    name: DynamoDB
+    icon: devicon-dynamodb-plain
+  socket:
+    name: socket.io
+    icon: devicon-socketio-original-wordmark
+  python:
+    name: Python
+    icon: python-plain-wordmark
+  r:
+    name: R
+    icon: devicon-rstudio-plain
+  linux:
+    name: Linux
+    icon: devicon-linux-plain
+  bash:
+    name: bash
+    icon: devicon-bash-plain
+  java:
+    name: Java
+    icon: devicon-java-plain-wordmark
+  spring:
+    name: Spring
+    icon: devicon-spring-original-wordmark

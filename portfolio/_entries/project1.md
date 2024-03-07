@@ -9,6 +9,9 @@ tools:
   - cpp
   - opengl
   - github
+  - ts
+  - vs
+  - node
 
 caption:
   title: Offline Raytracer

@@ -26,7 +26,7 @@
         <div class="portfolio-caption">
           <div class="portfolio-icons">
             {% for toolname in project.tools %}
-            <i class=" {{ site.data.utils.devicons[toolname] }}"></i>
+            <i class=" {{ site.data.utils.devicons[toolname].icon }}"></i>
             <!-- <i class="devicon-opengl-plain"></i>
             <i class="devicon-cplusplus-plain"></i>
             <i class="devicon-github-original"></i> -->
@@ -34,7 +34,6 @@
           </div>
           <h4>{{ project.caption.title }}</h4>
           <p class="text-muted">{{ project.caption.subtitle }}</p>
-          <p> {{ project.tools }}</p>
         </div>
       </div>
       {% endfor %}
