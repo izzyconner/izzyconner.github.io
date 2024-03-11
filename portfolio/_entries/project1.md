@@ -1,10 +1,10 @@
 ---
-title: Project Threads
+title: Offline Raytracer
 subtitle: subtitle lorem ipsum dolor sit amet consectetur.
 image: https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/src/assets/img/portfolio/01-full.jpg
 alt: Shirts on a hanger
 section: Graphics
-id: test1
+modal-tag: test1
 tools:
   - cpp
   - opengl
@@ -16,7 +16,7 @@ tools:
 caption:
   title: Offline Raytracer
   subtitle: Illustration
-  thumbnail: ../assets/img/portfolio/spheresWithoutPerspective.png
+  thumbnail: ../assets/img/portfolio/raytracer/spheresWithoutPerspective.png
 ---
 
 Use this area to describe your project. **Markdown** supported. This entry (project1.md) uses links for the image sources. All other projects in the portfolio use local images. Both work just fine! Lorem ipsum dolor sit amet, consectetur adipisicing elit.

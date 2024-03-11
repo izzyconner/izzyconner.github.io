@@ -1,0 +1,8 @@
+<div class="portfolio-icons">
+  {% for toolname in project.tools %}
+  <i class=" {{ site.data.utils.devicons[toolname].icon }}"></i>
+  {% endfor %}
+  <!-- {% for toolname in project.tools %}
+  <p>{{ site.data.utils.devicons[toolname].name }} </p>
+  {% endfor %} -->
+</div>

@@ -16,7 +16,7 @@ devicons:
     icon: devicon-csharp-plain
   vs:
     name: Visual Studio
-    icon: visualstudio-plain
+    icon: devicon-visualstudio-plain
   vscode:
     name: VSCode
     icon: devicon-vscode-plain

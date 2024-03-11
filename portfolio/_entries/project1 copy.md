@@ -4,7 +4,7 @@ subtitle: subtitle lorem ipsum dolor sit amet consectetur.
 image: https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/src/assets/img/portfolio/01-full.jpg
 alt: Shirts on a hanger
 section: Graphics
-id: test2
+modal-tag: test2
 
 caption:
   title: Offline Raytracer Again

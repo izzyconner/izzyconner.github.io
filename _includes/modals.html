@@ -1,7 +1,6 @@
 <!-- Portfolio Modals -->
 {% for project in site.entries %}
-{% if site.locale and site.locale != "" and site.locale != nil %}
-<div class="portfolio-modal modal fade" id="{{ project.id }}" tabindex=" -1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="{{ project.modal-tag }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="close-modal" data-dismiss="modal">
@@ -11,39 +10,9 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2 class="text-uppercase">{{ project.title }}</h2>
-              <p class="item-intro text-muted">{{ project.subtitle }}</p>
-              <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
-              <p>{{ project.content }}</p>
-              <button class="btn btn-primary" data-dismiss="modal" type="button">
-                <i class="fas fa-times"></i>
-                {{ site.data.sitetext[site.locale].portfolio.closebutton |
-                default: "Close Project" }}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-{% else %}
-<div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
+          <div class="col-sm-8 mx-auto">
+            <!-- Project Details Go Here -->
+            <div class="modal-body modal-column-left">
               <h2 class="text-uppercase">{{ project.title }}</h2>
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
               <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
@@ -55,11 +24,29 @@
               </button>
             </div>
           </div>
+          <div class="col-sm-4">
+            <!-- Additional Details Go Here -->
+            <h3 class="text-uppercase" id="project-date">
+              <i class="bi bi-calendar-week"></i>
+              Date goes here
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="modal-body modal-more-details">
+            <!-- More Details section goes here, port mortems, code snippets, etc. -->
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element.
+            These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+            You can modify any of this with custom CSS or overriding our default variables.
+            It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+            though
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-{% endif %}
+</div>
 {% endfor %}
 <!-- End Portfolio Modals -->
