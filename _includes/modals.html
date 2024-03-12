@@ -10,43 +10,73 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 mx-auto">
+          <div class="col-sm-7 mx-auto">
             <!-- Project Details Go Here -->
             <div class="modal-body modal-column-left">
               <h2 class="text-uppercase">{{ project.title }}</h2>
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
               <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
               <p>{{ project.content }}</p>
-              <button class="btn btn-primary" data-dismiss="modal" type="button">
-                <i class="fas fa-times"></i>
-                {{ site.data.sitetext.portfolio.closebutton |
-                default: "Close Project" }}
-              </button>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="modal-body col-sm-5">
             <!-- Additional Details Go Here -->
             <h3 class="text-uppercase" id="project-date">
               <i class="bi bi-calendar-week"></i>
-              Date goes here
+              July 2023
             </h3>
+            {% if project.carousel-pics != nil %}
+            <div id="{{ project.modal-tag }}-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                {% for item in project.carousel-pics %}
+                {% if forloop.index == 1 %}
+                <div class="carousel-item active">
+                  {% else %}
+                  <div class="carousel-item">
+                    {% endif %}
+                    <img src="{{ item.path }}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                      {% if item.label != nil %} <h5>{{ item.label }}</h5>{% endif %}
+                      {% if item.caption != nil %}<p>{{ item.caption }}</p>{% endif %}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#{{ project.modal-tag }}-carousel"
+                  data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#{{ project.modal-tag }}-carousel"
+                  data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              {% endif %}
+              {% if project.video-link != nil %}
+              <hr />
+              <iframe width=100% height=70% src="{{ project.video-link }}" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+              {% endif %}
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="modal-body modal-more-details">
-            <!-- More Details section goes here, port mortems, code snippets, etc. -->
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-            plugin adds the appropriate classes that we use to style each element.
-            These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
-            You can modify any of this with custom CSS or overriding our default variables.
-            It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
-            though
+          <div class="row">
+            <div class="modal-body modal-more-details">
+              <!-- More Details section goes here, port mortems, code snippets, etc. -->
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element.
+              These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+              You can modify any of this with custom CSS or overriding our default variables.
+              It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+              though
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </div>
 {% endfor %}
 <!-- End Portfolio Modals -->
